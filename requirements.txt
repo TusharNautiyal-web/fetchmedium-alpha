@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+pydantic
+pymongo
+beautifulsoup4
+python-dotenv
+feedparser

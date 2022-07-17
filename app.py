@@ -84,7 +84,7 @@ def get_all_images(article_dict,feed,image_value = 'thumbnail',):
     if(feed == 'tag'):
         for article in article_dict: 
             content = article_dict[article]['summary']
-            soup = bs(content)
+            soup = bs(content,features="html.parser")
             images = soup.findAll('img')
             for img in images:
                 if img.has_attr('src'):
@@ -236,7 +236,7 @@ def user_data(username: str,key: str):
 
 
 @app.get("/{username}/{key}/recent-articles/name")
-def get_articles(username: str, key: str):
+def get_articles_name(username: str, key: str):
     if(checkifalreadyexist_user_key(username,key)==True):
         user_data_link = f"http://medium.com/feed/{username}"
         info = feed.parse(user_data_link)
@@ -261,17 +261,11 @@ def get_articles(username: str, key: str):
         for article in article_dict:
             temp = str(article_dict[article]['link'])
             article_dict[article]['link'] = temp.split('?',1)[0]
-            # Getting All images
-        all_images = get_all_images(article_dict,"tag",image_value = "all")
-        thumbnails =  get_all_images(article_dict,"tag",image_value = "thumbnail")
-    
-        for article in article_dict:
-            article_dict[article]['image_links'] = all_images[article]
-            article_dict[article]['thumbnail'] = thumbnails[article]
         
         top10 = []
         for article in article_dict:
             top10.append(article_dict[article].title)
+            
         return top10
     
     else:
@@ -303,7 +297,12 @@ def get_articles(username: str, key: str):
         for article in article_dict:
             temp = str(article_dict[article]['link'])
             article_dict[article]['link'] = temp.split('?',1)[0]
-
+        all_images = get_all_images(article_dict,"tag",image_value = "all")
+        thumbnails =  get_all_images(article_dict,"tag",image_value = "thumbnail")
+        
+        for article in article_dict:
+            article_dict[article]['image_links'] = all_images[article]
+            article_dict[article]['thumbnail'] = thumbnails[article]
         return article_dict
     
     else:
@@ -314,4 +313,4 @@ def get_articles(username: str, key: str):
         
 
 if __name__=='__main__':
-    uvicorn.run(app, host = '0.0.0.0',port = '8000')
+    uvicorn.run(app, host = '0.0.0.0', port = '8000')
