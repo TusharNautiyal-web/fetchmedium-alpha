@@ -63,7 +63,7 @@ MONGODB_URL = "<your-url>"
      <td>Email</td>
     <td>Key</tr></td>
     <td>String</td>
-    <td>String Anders</td>
+    <td>String</td>
     <td>String</td>
 </table>
 
