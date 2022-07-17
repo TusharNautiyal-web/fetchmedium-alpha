@@ -36,7 +36,7 @@ If the medium username is already taken or registered you can create your key an
 
 ```api
 
-GET https://fetchmediumapi.herokuapp.com/register
+POST https://fetchmediumapi.herokuapp.com/register
 
 ```
 
