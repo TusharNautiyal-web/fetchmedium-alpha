@@ -7,6 +7,8 @@ This repository contains the documentation for fetchmedium API
 ![AppVeyor](https://img.shields.io/appveyor/build/tushar/fetchmedium)
 
 ```
+```api
+ 
  GET https://fetchmediumapi.herokuapp.com/
 
 ```
