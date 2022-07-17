@@ -58,9 +58,10 @@ MONGODB_URL = "<your-url>"
 
 ## MongoDB SCHEMA
 <table>
-    <tr>Username</tr>
-    <tr>Email</tr>
-    <tr>Key</tr>
+    <tr>
+     <td>Username</td>
+     <td>Email</td>
+    <td>Key</tr></td>
     <td>String</td>
     <td>String Anders</td>
     <td>String</td>
