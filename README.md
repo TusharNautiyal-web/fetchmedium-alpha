@@ -7,13 +7,19 @@ This repository contains the documentation for fetchmedium API
 ![AppVeyor](https://img.shields.io/appveyor/build/tushar/fetchmedium)
 
 ```
+# Read Complete Documentation
+You can also start trying out the api by going to the docs clicking here.
+<a href = 'https://fetchmediumapi.herokuapp.com/docs' target = "_blank">READ DOCS</a>
 ```api
  
- GET https://fetchmediumapi.herokuapp.com/
+ GET https://fetchmediumapi.herokuapp.com/docs
 
 ```
+
+
 # Description
-fetchmedium api lets u fetch your medium articles based on username , tags , publisher id etc it provides you with updated recent articles and also basic user data read documentation to know more.
+fetchmedium api lets u fetch your medium articles based on username , tags , publisher id etc it provides you with updated recent articles and also basic user data read documentation to know more. Please Understand this that its still in alpha phase and will be getting updates where more endpoints and features will be avalible.
+Its free of cost api unlike the original medium api which requires a subscription here you can get the some basic benifits of medium for free.
 <a href = 'https://fetchmediumapi.herokuapp.com/docs'>**Read Documentation**</a>
 
 This api is completely free to use and feel free to clone the repo and contribute toward this.  
