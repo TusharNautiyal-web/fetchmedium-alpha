@@ -52,6 +52,12 @@ GET https://fetchmediumapi.herokuapp.com/register
 ```api
 
 POST https://fetchmediumapi.herokuapp.com/process_form
+# Exist  = exist if @username already taken by someone and Exist = not_exist if not taken yet. 
+Body = {
+Username: "Your Username",
+Email: "Your Email",
+Exist: "exist"
+}
 
 ```
 
