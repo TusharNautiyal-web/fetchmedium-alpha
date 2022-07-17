@@ -3,6 +3,7 @@
 
 # fetchmedium - API - V 0.0.1 - alpha
 <img  src = 'https://img.shields.io/badge/Version-Alpha-Green.svg'/> <img  src = 'https://img.shields.io/badge/Latest-0.0.1-Green.svg'/> <img src = 'https://img.shields.io/badge/Language-Python-Orange.svg'/>
+
 This repository contains the documentation for fetchmedium API 
 ```
 @ Created By Tushar Natuiyal
