@@ -1,5 +1,4 @@
 ![logo-small](https://user-images.githubusercontent.com/74553737/179428806-ee2cb9c3-2ba5-47d6-abc4-5baf4d57019a.png)
-![AppVeyor](https://img.shields.io/appveyor/build/tushar/fetchmedium)
 
 
 # fetchmedium - API - V 0.0.1 - alpha
