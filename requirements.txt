@@ -5,3 +5,6 @@ pymongo
 beautifulsoup4
 python-dotenv
 feedparser
+pymongo[srv]
+fastapi-jinja
+python-multipart
