@@ -3,6 +3,7 @@
 @Version : 0.0.1
 @Youtube : Tushar Nautiyal 
 Subscribe To my Youtube channel.
+Please Change This file is for checking out code only change vairables and names of mongodb vars.
 """
 
 
@@ -27,12 +28,12 @@ regex = re.compile('([A-Za-z0-9]+[.-_])*[A-Za-z0-9]+@[A-Za-z0-9-]+(\.[A-Z|a-z]{2
 load_dotenv()
 database_url = os.getenv("MONGODB_URL")
 
-app = FastAPI(title="fetchmedium", version="0.0.1")
+app = FastAPI()
 
 # DB Setup
 client = pymongo.MongoClient(database_url)
-db = client.apirecords
-collections = db['User_records']
+db = client['Your-database']
+collections = db['Your-Records']
 templates = Jinja2Templates(directory="templates")
 
 
